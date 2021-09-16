@@ -1,0 +1,3 @@
+//include ':bluetoothpair'
+include ':app'
+rootProject.name = "TestBle"

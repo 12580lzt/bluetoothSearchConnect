@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="4dp"
+    android:layout_marginTop="@dimen/smallestPadding"
+    android:layout_marginEnd="4dp"
+    app:cardCornerRadius="@dimen/mediumPadding"
+    app:cardElevation="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:orientation="horizontal"
+
+        android:padding="@dimen/mediumPadding">
+
+        <RelativeLayout
+            android:layout_width="@dimen/largestPadding"
+            android:layout_height="@dimen/largestPadding"
+            android:layout_gravity="center"
+            android:background="@drawable/drawable_bt_button_bg"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/ivDeviceType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/tinyPadding"
+            android:layout_marginEnd="@dimen/microPadding"
+            android:layout_weight="4"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDeviceName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="名字"
+                android:textColor="@color/black"
+                android:textSize="@dimen/extraMediumSize"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDeviceAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/macroPadding"
+                android:text="Address"
+                android:textColor="@color/black"
+                android:textSize="@dimen/xmediumSize" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvBluetoothStatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:layout_toLeftOf="@id/rlBluetoothPairUnpair"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/macroPadding"
+            android:textColor="@color/black"
+            android:textSize="@dimen/smallSize"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/rlBluetoothPairUnpair"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:background="@drawable/drawable_bg"
+            android:gravity="center"
+            android:padding="@dimen/macroPadding">
+
+
+            <TextView
+                android:id="@+id/tvBluetoothPairUnpair"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/macroPadding"
+                android:text="配对"
+                android:textColor="@color/black"
+                android:textSize="@dimen/smallSize"
+                android:textStyle="bold" />
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
